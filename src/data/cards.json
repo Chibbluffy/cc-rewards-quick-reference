@@ -1,0 +1,3731 @@
+{
+  "version": "1.1",
+  "lastUpdated": "2026-05-15",
+  "categories": [
+    {
+      "id": "dining",
+      "name": "Dining & Restaurants",
+      "icon": "🍽️",
+      "aliases": [
+        "restaurant",
+        "food",
+        "eating",
+        "takeout",
+        "delivery",
+        "fast food",
+        "coffee",
+        "cafe",
+        "bar",
+        "bars",
+        "nightclub",
+        "doordash",
+        "ubereats",
+        "grubhub"
+      ],
+      "notes": [
+        "Usually includes takeout, delivery, and coffee shops",
+        "Some cards exclude bars and nightclubs"
+      ]
+    },
+    {
+      "id": "groceries",
+      "name": "Groceries & Supermarkets",
+      "icon": "🛒",
+      "aliases": [
+        "grocery",
+        "supermarket",
+        "food shopping",
+        "kroger",
+        "safeway",
+        "publix",
+        "whole foods",
+        "trader joes",
+        "aldi",
+        "wegmans"
+      ],
+      "notes": [
+        "Typically excludes Walmart, Target, and Costco for most cards",
+        "Amex cards exclude all warehouse clubs and superstores"
+      ]
+    },
+    {
+      "id": "gas",
+      "name": "Gas Stations",
+      "icon": "⛽",
+      "aliases": [
+        "fuel",
+        "petrol",
+        "gasoline",
+        "ev charging",
+        "electric vehicle charging",
+        "shell",
+        "bp",
+        "chevron",
+        "exxon",
+        "mobil",
+        "sunoco"
+      ],
+      "notes": [
+        "Many cards now include EV charging stations",
+        "Costco gas may not qualify — coded as warehouse club"
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel (General)",
+      "icon": "✈️",
+      "aliases": [
+        "vacation",
+        "trip",
+        "flights",
+        "hotels",
+        "airbnb",
+        "vrbo",
+        "cruise",
+        "airport",
+        "train",
+        "bus ticket",
+        "travel"
+      ],
+      "notes": [
+        "Definition varies widely by card — check if portal booking is required"
+      ]
+    },
+    {
+      "id": "flights",
+      "name": "Flights & Airlines",
+      "icon": "🛫",
+      "aliases": [
+        "airline",
+        "airfare",
+        "plane ticket",
+        "delta",
+        "united",
+        "american airlines",
+        "southwest",
+        "jetblue",
+        "spirit",
+        "frontier"
+      ],
+      "notes": [
+        "Some cards require booking directly with the airline, not through an OTA"
+      ]
+    },
+    {
+      "id": "hotels",
+      "name": "Hotels & Lodging",
+      "icon": "🏨",
+      "aliases": [
+        "hotel",
+        "motel",
+        "airbnb",
+        "vrbo",
+        "lodging",
+        "resort",
+        "inn",
+        "marriott",
+        "hilton",
+        "hyatt"
+      ],
+      "notes": []
+    },
+    {
+      "id": "car-rentals",
+      "name": "Car Rentals",
+      "icon": "🚗",
+      "aliases": [
+        "car rental",
+        "enterprise",
+        "hertz",
+        "avis",
+        "budget",
+        "national",
+        "alamo"
+      ],
+      "notes": []
+    },
+    {
+      "id": "streaming",
+      "name": "Streaming Services",
+      "icon": "📺",
+      "aliases": [
+        "netflix",
+        "spotify",
+        "hulu",
+        "disney",
+        "disney+",
+        "apple tv",
+        "hbo",
+        "max",
+        "peacock",
+        "paramount",
+        "youtube premium",
+        "tidal",
+        "pandora",
+        "siriusxm"
+      ],
+      "notes": [
+        "Netflix, Hulu, Disney+, Max, Peacock, Spotify, Apple TV+, etc."
+      ]
+    },
+    {
+      "id": "online-shopping",
+      "name": "Online Shopping",
+      "icon": "🛍️",
+      "aliases": [
+        "ecommerce",
+        "internet shopping",
+        "web shopping",
+        "ebay",
+        "etsy",
+        "wayfair",
+        "chewy"
+      ],
+      "notes": [
+        "Amazon usually listed separately — check both categories"
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "icon": "📦",
+      "aliases": [
+        "amazon.com",
+        "prime",
+        "amazon prime",
+        "amazon fresh",
+        "prime now"
+      ],
+      "notes": [
+        "Amazon Prime membership required for higher rates on some cards"
+      ]
+    },
+    {
+      "id": "wholesale-clubs",
+      "name": "Wholesale Clubs",
+      "icon": "🏪",
+      "aliases": [
+        "costco",
+        "sams club",
+        "sams",
+        "bjs",
+        "warehouse club"
+      ],
+      "notes": [
+        "Costco, Sam's Club, BJ's Wholesale",
+        "Often coded differently than grocery stores — most grocery bonuses won't apply here"
+      ]
+    },
+    {
+      "id": "drugstores",
+      "name": "Drugstores & Pharmacies",
+      "icon": "💊",
+      "aliases": [
+        "pharmacy",
+        "cvs",
+        "walgreens",
+        "rite aid",
+        "prescription",
+        "medicine"
+      ],
+      "notes": [
+        "CVS, Walgreens, Rite Aid, etc."
+      ]
+    },
+    {
+      "id": "home-improvement",
+      "name": "Home Improvement",
+      "icon": "🔨",
+      "aliases": [
+        "hardware",
+        "home depot",
+        "lowes",
+        "ace hardware",
+        "menards",
+        "hardware store",
+        "renovation"
+      ],
+      "notes": [
+        "Home Depot, Lowe's, Ace Hardware, Menards"
+      ]
+    },
+    {
+      "id": "entertainment",
+      "name": "Entertainment",
+      "icon": "🎭",
+      "aliases": [
+        "movies",
+        "concerts",
+        "events",
+        "sports",
+        "theaters",
+        "amusement park",
+        "ticketmaster",
+        "stubhub",
+        "cinema",
+        "bowling",
+        "golf",
+        "museum"
+      ],
+      "notes": [
+        "Movies, concerts, sporting events, amusement parks",
+        "Definition varies — Capital One is very broad, others are narrow"
+      ]
+    },
+    {
+      "id": "transit",
+      "name": "Transit & Rideshare",
+      "icon": "🚌",
+      "aliases": [
+        "uber",
+        "lyft",
+        "subway",
+        "metro",
+        "bus",
+        "rideshare",
+        "train",
+        "commuting",
+        "taxi",
+        "cab",
+        "amtrak",
+        "toll",
+        "parking"
+      ],
+      "notes": [
+        "Includes Uber, Lyft, public transit, taxis, Amtrak, and sometimes tolls/parking"
+      ]
+    },
+    {
+      "id": "phone",
+      "name": "Phone & Wireless",
+      "icon": "📱",
+      "aliases": [
+        "cell phone",
+        "wireless",
+        "phone bill",
+        "mobile",
+        "verizon",
+        "att",
+        "t-mobile",
+        "sprint"
+      ],
+      "notes": []
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "icon": "💡",
+      "aliases": [
+        "electric",
+        "water",
+        "gas bill",
+        "internet",
+        "cable",
+        "electric bill",
+        "power"
+      ],
+      "notes": [
+        "Electric, water, internet, cable"
+      ]
+    },
+    {
+      "id": "office-supplies",
+      "name": "Office Supplies",
+      "icon": "📎",
+      "aliases": [
+        "staples",
+        "office depot",
+        "officemax",
+        "printer",
+        "paper",
+        "pens"
+      ],
+      "notes": [
+        "Staples, Office Depot, OfficeMax — primarily useful for business card holders"
+      ]
+    },
+    {
+      "id": "target",
+      "name": "Target",
+      "icon": "🎯",
+      "aliases": [
+        "target.com",
+        "target store"
+      ],
+      "notes": [
+        "Target RedCard gives 5% at Target and Target.com"
+      ]
+    },
+    {
+      "id": "costco",
+      "name": "Costco",
+      "icon": "🏬",
+      "aliases": [
+        "costco.com",
+        "costco warehouse"
+      ],
+      "notes": [
+        "Costco only accepts Visa. The Costco Anywhere Visa gives 2% back on Costco purchases."
+      ]
+    },
+    {
+      "id": "apple",
+      "name": "Apple Purchases",
+      "icon": "🍎",
+      "aliases": [
+        "apple store",
+        "apple.com",
+        "app store",
+        "itunes",
+        "icloud"
+      ],
+      "notes": [
+        "Apple Card gives 3% at Apple. Apple Pay transactions on Apple Card give 2%."
+      ]
+    },
+    {
+      "id": "everything",
+      "name": "Everything Else",
+      "icon": "💳",
+      "aliases": [
+        "all",
+        "other",
+        "miscellaneous",
+        "general",
+        "catch-all",
+        "base rate"
+      ],
+      "notes": [
+        "Catch-all rate for purchases not in a bonus category"
+      ]
+    }
+  ],
+  "rewardPrograms": {
+    "cash": {
+      "name": "Cash Back",
+      "type": "cashback",
+      "color": "#16a34a"
+    },
+    "chase-ur": {
+      "name": "Chase Ultimate Rewards",
+      "type": "points",
+      "color": "#1A1F71",
+      "baseValueCpp": 1
+    },
+    "amex-mr": {
+      "name": "Amex Membership Rewards",
+      "type": "points",
+      "color": "#007BC1",
+      "baseValueCpp": 1
+    },
+    "capital-one-miles": {
+      "name": "Capital One Miles",
+      "type": "miles",
+      "color": "#D03027",
+      "baseValueCpp": 1
+    },
+    "citi-thankyou": {
+      "name": "Citi ThankYou Points",
+      "type": "points",
+      "color": "#003A6C",
+      "baseValueCpp": 1
+    },
+    "bilt-points": {
+      "name": "Bilt Points",
+      "type": "points",
+      "color": "#1C1C1E",
+      "baseValueCpp": 1
+    },
+    "discover-cash": {
+      "name": "Discover Cash Back",
+      "type": "cashback",
+      "color": "#FF6600"
+    },
+    "delta-skymiles": {
+      "name": "Delta SkyMiles",
+      "type": "miles",
+      "color": "#003366",
+      "baseValueCpp": 1
+    },
+    "southwest-points": {
+      "name": "Southwest Rapid Rewards",
+      "type": "points",
+      "color": "#304CB2",
+      "baseValueCpp": 1
+    },
+    "marriott-points": {
+      "name": "Marriott Bonvoy Points",
+      "type": "points",
+      "color": "#8B1A3D",
+      "baseValueCpp": 0.7
+    },
+    "hyatt-points": {
+      "name": "World of Hyatt Points",
+      "type": "points",
+      "color": "#7B3F00",
+      "baseValueCpp": 1.7
+    },
+    "united-miles": {
+      "name": "United MileagePlus",
+      "type": "miles",
+      "color": "#005DAA",
+      "baseValueCpp": 1
+    }
+  },
+  "cards": [
+    {
+      "id": "wells-fargo-active-cash",
+      "name": "Wells Fargo Active Cash",
+      "issuer": "Wells Fargo",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#D71E28",
+      "url": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+      "signupBonus": {
+        "description": "$200 cash rewards bonus after spending $500 in first 3 months",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 500,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "everything",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 2,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.wellsfargo.com/active-cash-credit-card/"
+    },
+    {
+      "id": "chase-freedom-unlimited",
+      "name": "Chase Freedom Unlimited",
+      "issuer": "Chase",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "chase-ur",
+      "color": "#1A1F71",
+      "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+      "signupBonus": {
+        "description": "$200 bonus after spending $500 in first 3 months",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 500,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "travel",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Must book through Chase Travel℠ portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Chase Travel℠"
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "drugstores",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1.5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "⚠️ 3% foreign transaction fee — do not use internationally"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1.5,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+    },
+    {
+      "id": "chase-freedom-flex",
+      "name": "Chase Freedom Flex",
+      "issuer": "Chase",
+      "network": "Mastercard",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "chase-ur",
+      "color": "#1A1F71",
+      "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+      "signupBonus": {
+        "description": "$200 bonus after spending $500 in first 3 months",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 500,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "travel",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Must book through Chase Travel℠ portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Chase Travel℠"
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "drugstores",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "⚠️ 3% foreign transaction fee — do not use internationally"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": {
+        "type": "quarterly",
+        "activationRequired": true,
+        "activationDeadlineNote": "Activate by the 14th day of the last month of the quarter. Activation is retroactive for that quarter.",
+        "selectionRequired": false,
+        "rate": 5,
+        "cap": 1500,
+        "capPeriod": "quarter",
+        "quarters": {
+          "2026-Q1": {
+            "period": "Jan 1 – Mar 31, 2026",
+            "startDate": "2026-01-01",
+            "endDate": "2026-03-31",
+            "activationDeadline": "2026-03-14",
+            "announced": true,
+            "categoryIds": [
+              "dining"
+            ],
+            "displayCategories": [
+              "Dining",
+              "American Heart Association",
+              "Norwegian Cruise Line"
+            ]
+          },
+          "2026-Q2": {
+            "period": "Apr 1 – Jun 30, 2026",
+            "startDate": "2026-04-01",
+            "endDate": "2026-06-30",
+            "activationDeadline": "2026-06-14",
+            "announced": true,
+            "categoryIds": [
+              "amazon",
+              "travel",
+              "groceries"
+            ],
+            "displayCategories": [
+              "Amazon",
+              "Chase Travel℠ (9% elevated)",
+              "Whole Foods Market",
+              "Feeding America"
+            ]
+          },
+          "2026-Q3": {
+            "period": "Jul 1 – Sep 30, 2026",
+            "startDate": "2026-07-01",
+            "endDate": "2026-09-30",
+            "activationDeadline": "2026-09-14",
+            "announced": false,
+            "categoryIds": [],
+            "displayCategories": []
+          },
+          "2026-Q4": {
+            "period": "Oct 1 – Dec 31, 2026",
+            "startDate": "2026-10-01",
+            "endDate": "2026-12-31",
+            "activationDeadline": "2026-12-14",
+            "announced": false,
+            "categoryIds": [],
+            "displayCategories": []
+          }
+        }
+      },
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://media.chase.com/news/chase-freedom-2026-q2-categories"
+    },
+    {
+      "id": "discover-it",
+      "name": "Discover it Cash Back",
+      "issuer": "Discover",
+      "network": "Discover",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "discover-cash",
+      "color": "#FF6600",
+      "url": "https://www.discover.com/credit-cards/cash-back/it-card.html",
+      "signupBonus": {
+        "description": "Cashback Match — all cash back earned in first 12 months automatically doubled",
+        "amount": null,
+        "currency": "cashback-match",
+        "spend": null,
+        "days": 365
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": {
+        "type": "quarterly",
+        "activationRequired": true,
+        "activationDeadlineNote": "Activate each quarter at discover.com or in the app before the quarter ends.",
+        "selectionRequired": false,
+        "rate": 5,
+        "cap": 1500,
+        "capPeriod": "quarter",
+        "quarters": {
+          "2026-Q1": {
+            "period": "Jan 1 – Mar 31, 2026",
+            "startDate": "2026-01-01",
+            "endDate": "2026-03-31",
+            "activationDeadline": "2026-03-31",
+            "announced": true,
+            "categoryIds": [
+              "groceries",
+              "wholesale-clubs",
+              "streaming"
+            ],
+            "displayCategories": [
+              "Grocery Stores",
+              "Wholesale Clubs",
+              "Select Streaming Services"
+            ]
+          },
+          "2026-Q2": {
+            "period": "Apr 1 – Jun 30, 2026",
+            "startDate": "2026-04-01",
+            "endDate": "2026-06-30",
+            "activationDeadline": "2026-06-30",
+            "announced": true,
+            "categoryIds": [
+              "dining",
+              "home-improvement"
+            ],
+            "displayCategories": [
+              "Restaurants",
+              "Home Improvement Stores"
+            ]
+          },
+          "2026-Q3": {
+            "period": "Jul 1 – Sep 30, 2026",
+            "startDate": "2026-07-01",
+            "endDate": "2026-09-30",
+            "activationDeadline": "2026-09-30",
+            "announced": false,
+            "categoryIds": [],
+            "displayCategories": []
+          },
+          "2026-Q4": {
+            "period": "Oct 1 – Dec 31, 2026",
+            "startDate": "2026-10-01",
+            "endDate": "2026-12-31",
+            "activationDeadline": "2026-12-31",
+            "announced": false,
+            "categoryIds": [],
+            "displayCategories": []
+          }
+        }
+      },
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.bankrate.com/credit-cards/cash-back/guide-to-discover-it-cash-back-bonus-categories/"
+    },
+    {
+      "id": "amex-gold",
+      "name": "Amex Gold Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "type": "points",
+      "annualFee": 325,
+      "effectiveAnnualFee": 85,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "amex-mr",
+      "color": "#B8860B",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "signupBonus": {
+        "description": "60,000 Membership Rewards points after spending $6,000 in first 6 months",
+        "amount": 60000,
+        "currency": "amex-mr",
+        "spend": 6000,
+        "days": 180
+      },
+      "credits": [
+        {
+          "name": "Dining Credit",
+          "amount": 120,
+          "period": "annual",
+          "description": "$10/month at Grubhub, The Cheesecake Factory, Goldbelly, Wine.com, and Five Guys"
+        },
+        {
+          "name": "Uber Cash",
+          "amount": 120,
+          "period": "annual",
+          "description": "$10/month in Uber Cash for Uber Eats orders or Uber rides in the US (must add card to Uber account)"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "dining",
+          "rate": 4,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Includes takeout and delivery worldwide"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 4,
+          "isMultiplier": true,
+          "cap": 25000,
+          "capPeriod": "year",
+          "notes": [
+            "US supermarkets only",
+            "Excludes Walmart, Target, Costco, and other superstores/warehouse clubs"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "flights",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Flights booked directly with airlines or on amextravel.com only — not through other OTAs"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
+    },
+    {
+      "id": "redstone-fcu-cashbackplus",
+      "name": "Redstone FCU CashBack+",
+      "issuer": "Redstone Federal Credit Union",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#C41230",
+      "url": "https://www.redfcu.org/personal/credits-cards/cashbackplus-creditcard-nobiz/",
+      "signupBonus": null,
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "gas",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Permanent 2% on gas regardless of chosen category"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Permanent 2% on groceries regardless of chosen category"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1.5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Membership required — Redstone FCU (open to Huntsville, AL area and qualifying groups)"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1.5,
+      "rotating": null,
+      "choiceCategory": {
+        "type": "quarterly",
+        "selectionRequired": true,
+        "selectionDeadlineNote": "Select your category in the Redstone app or online banking before the quarter begins. Default is Restaurants for first quarter.",
+        "rate": 5,
+        "cap": 1500,
+        "capPeriod": "quarter",
+        "afterCapRate": 1.5,
+        "availableCategoryIds": [
+          "dining",
+          "travel",
+          "amazon",
+          "home-improvement",
+          "online-shopping",
+          "streaming"
+        ],
+        "availableCategoryDisplay": [
+          "Restaurants",
+          "Travel",
+          "Amazon",
+          "Home Improvement",
+          "Online Shopping",
+          "Streaming"
+        ]
+      },
+      "activationRequired": false,
+      "membershipRequired": true,
+      "membershipDetails": "Redstone Federal Credit Union membership required. Open to those living/working in select areas of Alabama and Tennessee, U.S. military, and other qualifying groups.",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.doctorofcredit.com/redstone-credit-card-to-receive-nerf-no-more-5-restaurants-gas/"
+    },
+    {
+      "id": "citi-double-cash",
+      "name": "Citi Double Cash",
+      "issuer": "Citi",
+      "network": "Mastercard",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "citi-thankyou",
+      "color": "#003A6C",
+      "url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+      "signupBonus": {
+        "description": "$200 cash back after spending $1,500 in first 6 months",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 1500,
+        "days": 180
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "everything",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "1% when you buy + 1% when you pay the bill",
+            "⚠️ 3% foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 2,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.citi.com/credit-cards/citi-double-cash-credit-card"
+    },
+    {
+      "id": "citi-custom-cash",
+      "name": "Citi Custom Cash",
+      "issuer": "Citi",
+      "network": "Mastercard",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "citi-thankyou",
+      "color": "#003A6C",
+      "url": "https://www.citi.com/credit-cards/citi-custom-cash-card",
+      "signupBonus": {
+        "description": "$200 cash back after spending $1,500 in first 6 months",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 1500,
+        "days": 180
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "⚠️ 3% foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": {
+        "type": "monthly",
+        "selectionRequired": false,
+        "selectionDeadlineNote": "Automatically earns 5% on your highest eligible spend category each billing cycle — no selection needed.",
+        "rate": 5,
+        "cap": 500,
+        "capPeriod": "month",
+        "afterCapRate": 1,
+        "availableCategoryIds": [
+          "dining",
+          "groceries",
+          "gas",
+          "transit",
+          "streaming",
+          "drugstores",
+          "home-improvement",
+          "fitness",
+          "online-shopping",
+          "phone"
+        ],
+        "availableCategoryDisplay": [
+          "Restaurants",
+          "Grocery Stores",
+          "Gas Stations",
+          "Select Travel",
+          "Select Transit",
+          "Select Streaming",
+          "Drugstores",
+          "Home Improvement",
+          "Fitness Clubs",
+          "Live Entertainment"
+        ]
+      },
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.citi.com/credit-cards/citi-custom-cash-card"
+    },
+    {
+      "id": "capital-one-savorone",
+      "name": "Capital One SavorOne",
+      "issuer": "Capital One",
+      "network": "Mastercard",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#D03027",
+      "url": "https://capitalone.com/credit-cards/savorone/",
+      "signupBonus": {
+        "description": "$200 cash bonus after spending $500 in first 3 months",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 500,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "entertainment",
+          "rate": 8,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Only at Capital One Entertainment — tickets via the Capital One portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Entertainment"
+        },
+        {
+          "categoryId": "hotels",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Must book through Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "car-rentals",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Must book through Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "entertainment",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "General entertainment (movies, sports, etc.) — not Capital One Entertainment portal"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Excludes superstores like Walmart and Target"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "streaming",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Popular streaming services"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://capitalone.com/credit-cards/savorone/"
+    },
+    {
+      "id": "capital-one-savor",
+      "name": "Capital One Savor",
+      "issuer": "Capital One",
+      "network": "Mastercard",
+      "type": "cashback",
+      "annualFee": 95,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#D03027",
+      "url": "https://capitalone.com/credit-cards/savor/",
+      "signupBonus": {
+        "description": "$300 cash bonus after spending $3,000 in first 3 months",
+        "amount": 300,
+        "currency": "cash",
+        "spend": 3000,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "entertainment",
+          "rate": 8,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Only at Capital One Entertainment portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Entertainment"
+        },
+        {
+          "categoryId": "hotels",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Must book through Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "car-rentals",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Must book through Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "dining",
+          "rate": 4,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "entertainment",
+          "rate": 4,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "General entertainment"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Excludes superstores"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "streaming",
+          "rate": 4,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://capitalone.com/credit-cards/savor/"
+    },
+    {
+      "id": "chase-sapphire-preferred",
+      "name": "Chase Sapphire Preferred",
+      "issuer": "Chase",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 95,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "chase-ur",
+      "color": "#1A1F71",
+      "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "signupBonus": {
+        "description": "60,000 bonus points after spending $4,000 in first 3 months",
+        "amount": 60000,
+        "currency": "chase-ur",
+        "spend": 4000,
+        "days": 90
+      },
+      "credits": [
+        {
+          "name": "$50 Hotel Credit",
+          "amount": 50,
+          "period": "annual",
+          "description": "$50 annual credit on hotel stays booked through Chase Travel℠"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "travel",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Must book through Chase Travel℠ portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Chase Travel℠"
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Includes delivery services"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Online grocery purchases only (Instacart, Walmart Grocery, etc.)"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "streaming",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Select streaming services"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "travel",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "All other travel purchases (airlines, hotels, etc.) not booked through Chase Travel℠"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "Points worth 25% more through Chase Travel℠ (1.25 cpp)"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred"
+    },
+    {
+      "id": "chase-sapphire-reserve",
+      "name": "Chase Sapphire Reserve",
+      "issuer": "Chase",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 550,
+      "effectiveAnnualFee": 250,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "chase-ur",
+      "color": "#1A1F71",
+      "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+      "signupBonus": {
+        "description": "60,000 bonus points after spending $4,000 in first 3 months",
+        "amount": 60000,
+        "currency": "chase-ur",
+        "spend": 4000,
+        "days": 90
+      },
+      "credits": [
+        {
+          "name": "Travel Credit",
+          "amount": 300,
+          "period": "annual",
+          "description": "$300 annual travel credit applied automatically to travel purchases"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "travel",
+          "rate": 10,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Hotels and rental cars via Chase Travel℠"
+          ],
+          "requiresPortal": true,
+          "portalName": "Chase Travel℠"
+        },
+        {
+          "categoryId": "flights",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Flights via Chase Travel℠"
+          ],
+          "requiresPortal": true,
+          "portalName": "Chase Travel℠"
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Worldwide"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "travel",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "All other travel not booked via Chase Travel℠"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "Points worth 50% more through Chase Travel℠ (1.5 cpp)"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve"
+    },
+    {
+      "id": "amex-blue-cash-preferred",
+      "name": "Amex Blue Cash Preferred",
+      "issuer": "American Express",
+      "network": "Amex",
+      "type": "cashback",
+      "annualFee": 95,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#007BC1",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/",
+      "signupBonus": {
+        "description": "$250 statement credit after spending $3,000 in first 6 months",
+        "amount": 250,
+        "currency": "cash",
+        "spend": 3000,
+        "days": 180
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "groceries",
+          "rate": 6,
+          "isMultiplier": false,
+          "cap": 6000,
+          "capPeriod": "year",
+          "notes": [
+            "US supermarkets only",
+            "Excludes Walmart, Target, Costco",
+            "After $6,000 annual spend, drops to 1%"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "streaming",
+          "rate": 6,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Select US streaming subscriptions"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "transit",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Taxis, rideshare, parking, tolls, trains, buses"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "US gas stations"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/"
+    },
+    {
+      "id": "amex-blue-cash-everyday",
+      "name": "Amex Blue Cash Everyday",
+      "issuer": "American Express",
+      "network": "Amex",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#007BC1",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/",
+      "signupBonus": {
+        "description": "$200 statement credit after spending $2,000 in first 6 months",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 2000,
+        "days": 180
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "groceries",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": 6000,
+          "capPeriod": "year",
+          "notes": [
+            "US supermarkets only",
+            "Excludes Walmart, Target, Costco",
+            "After $6,000, drops to 1%"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "online-shopping",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": 6000,
+          "capPeriod": "year",
+          "notes": [
+            "US online retail purchases",
+            "After $6,000, drops to 1%"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": 6000,
+          "capPeriod": "year",
+          "notes": [
+            "US gas stations",
+            "After $6,000, drops to 1%"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/"
+    },
+    {
+      "id": "amex-platinum",
+      "name": "Amex Platinum Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "type": "points",
+      "annualFee": 695,
+      "effectiveAnnualFee": 95,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "amex-mr",
+      "color": "#B0B0B0",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "signupBonus": {
+        "description": "80,000 Membership Rewards points after spending $8,000 in first 6 months",
+        "amount": 80000,
+        "currency": "amex-mr",
+        "spend": 8000,
+        "days": 180
+      },
+      "credits": [
+        {
+          "name": "Airline Fee Credit",
+          "amount": 200,
+          "period": "annual",
+          "description": "Incidental fees on one selected airline"
+        },
+        {
+          "name": "Hotel Credit",
+          "amount": 200,
+          "period": "annual",
+          "description": "Prepaid hotels via amextravel.com (Fine Hotels + Resorts or The Hotel Collection)"
+        },
+        {
+          "name": "Uber Cash",
+          "amount": 200,
+          "period": "annual",
+          "description": "$15/month ($20 in Dec) in Uber Cash for rides and Uber Eats"
+        },
+        {
+          "name": "Digital Entertainment Credit",
+          "amount": 240,
+          "period": "annual",
+          "description": "$20/month on select subscriptions (Disney+, ESPN+, Hulu, Peacock, NY Times, SiriusXM, etc.)"
+        },
+        {
+          "name": "Walmart+ Credit",
+          "amount": 155,
+          "period": "annual",
+          "description": "Monthly Walmart+ membership fees"
+        },
+        {
+          "name": "Global Entry/TSA PreCheck",
+          "amount": 100,
+          "period": "annual",
+          "description": "Every 4 years for Global Entry or every 4.5 years for TSA PreCheck"
+        },
+        {
+          "name": "CLEAR Plus Credit",
+          "amount": 189,
+          "period": "annual",
+          "description": "CLEAR Plus airport security membership"
+        },
+        {
+          "name": "Equinox Credit",
+          "amount": 300,
+          "period": "annual",
+          "description": "Equinox gym membership or Equinox+ app"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "flights",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Flights booked directly with airlines or on amextravel.com"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "hotels",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Prepaid hotels booked via amextravel.com only"
+          ],
+          "requiresPortal": true,
+          "portalName": "amextravel.com"
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "Very high annual fee — value comes from credits and lounge access"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.americanexpress.com/us/credit-cards/card/platinum/"
+    },
+    {
+      "id": "capital-one-venture-x",
+      "name": "Capital One Venture X",
+      "issuer": "Capital One",
+      "network": "Visa",
+      "type": "miles",
+      "annualFee": 395,
+      "effectiveAnnualFee": -5,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "capital-one-miles",
+      "color": "#D03027",
+      "url": "https://capitalone.com/credit-cards/venture-x/",
+      "signupBonus": {
+        "description": "75,000 miles after spending $4,000 in first 3 months",
+        "amount": 75000,
+        "currency": "capital-one-miles",
+        "spend": 4000,
+        "days": 90
+      },
+      "credits": [
+        {
+          "name": "Travel Credit",
+          "amount": 300,
+          "period": "annual",
+          "description": "$300 annual credit for bookings through Capital One Travel"
+        },
+        {
+          "name": "Anniversary Miles",
+          "amount": 100,
+          "period": "annual",
+          "description": "10,000 bonus miles (worth ~$100) every account anniversary"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "hotels",
+          "rate": 10,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Hotels via Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "car-rentals",
+          "rate": 10,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Rental cars via Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "flights",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Flights via Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "everything",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "Includes Priority Pass lounge access"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 2,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://capitalone.com/credit-cards/venture-x/"
+    },
+    {
+      "id": "capital-one-venture",
+      "name": "Capital One Venture",
+      "issuer": "Capital One",
+      "network": "Visa",
+      "type": "miles",
+      "annualFee": 95,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "capital-one-miles",
+      "color": "#D03027",
+      "url": "https://capitalone.com/credit-cards/venture/",
+      "signupBonus": {
+        "description": "75,000 miles after spending $4,000 in first 3 months",
+        "amount": 75000,
+        "currency": "capital-one-miles",
+        "spend": 4000,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "hotels",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Hotels and rental cars via Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "car-rentals",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Via Capital One Travel portal"
+          ],
+          "requiresPortal": true,
+          "portalName": "Capital One Travel"
+        },
+        {
+          "categoryId": "everything",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 2,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://capitalone.com/credit-cards/venture/"
+    },
+    {
+      "id": "us-bank-cash-plus",
+      "name": "US Bank Cash+",
+      "issuer": "US Bank",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "cash",
+      "color": "#D01F3C",
+      "url": "https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html",
+      "signupBonus": {
+        "description": "$200 bonus after spending $1,000 in first 90 days",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 1000,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "⚠️ 3% foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": {
+        "type": "quarterly",
+        "selectionRequired": true,
+        "selectionDeadlineNote": "Select categories each quarter in the US Bank app or website before the quarter begins.",
+        "rate": 5,
+        "cap": 2000,
+        "capPeriod": "quarter",
+        "afterCapRate": 1,
+        "secondaryRate": 2,
+        "secondaryCategoryNote": "Also choose 1 everyday category for 2% (groceries, gas stations, or restaurants)",
+        "availableCategoryIds": [
+          "home-utilities",
+          "streaming",
+          "phone",
+          "groceries",
+          "gas",
+          "dining",
+          "drugstores",
+          "home-improvement",
+          "gym"
+        ],
+        "availableCategoryDisplay": [
+          "TV/Internet/Streaming",
+          "Fast Food",
+          "Home Utilities",
+          "Cell Phone Providers",
+          "Electronic Stores",
+          "Sporting Goods",
+          "Movie Theaters",
+          "Furniture Stores",
+          "Ground Transportation",
+          "Gyms/Fitness Centers",
+          "Car Washes"
+        ],
+        "secondaryCategoryDisplay": [
+          "Grocery Stores",
+          "Gas Stations",
+          "Restaurants"
+        ]
+      },
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html"
+    },
+    {
+      "id": "wells-fargo-autograph",
+      "name": "Wells Fargo Autograph",
+      "issuer": "Wells Fargo",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#D71E28",
+      "url": "https://creditcards.wellsfargo.com/autograph-visa-credit-card/",
+      "signupBonus": {
+        "description": "20,000 bonus points ($200 value) after spending $1,000 in first 3 months",
+        "amount": 20000,
+        "currency": "cash",
+        "spend": 1000,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "travel",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Hotels, airlines, car rentals, cruises"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Including EV charging stations"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "transit",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Rideshare, buses, trains, taxis, tolls"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "streaming",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Popular streaming services"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "phone",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Phone plans"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.wellsfargo.com/autograph-visa-credit-card/"
+    },
+    {
+      "id": "wells-fargo-autograph-journey",
+      "name": "Wells Fargo Autograph Journey",
+      "issuer": "Wells Fargo",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 95,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#D71E28",
+      "url": "https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/",
+      "signupBonus": {
+        "description": "60,000 bonus points ($600 value) after spending $4,000 in first 3 months",
+        "amount": 60000,
+        "currency": "cash",
+        "spend": 4000,
+        "days": 90
+      },
+      "credits": [
+        {
+          "name": "Hotel Credit",
+          "amount": 50,
+          "period": "annual",
+          "description": "$50 annual statement credit on hotel purchases (minimum $50 purchase)"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "hotels",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "flights",
+          "rate": 4,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.wellsfargo.com/autograph-journey-visa-credit-card/"
+    },
+    {
+      "id": "boa-customized-cash",
+      "name": "Bank of America Customized Cash Rewards",
+      "issuer": "Bank of America",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "cash",
+      "color": "#012169",
+      "url": "https://www.bankofamerica.com/credit-cards/customized-cash-rewards-credit-card/",
+      "signupBonus": {
+        "description": "$200 cash rewards bonus after spending $1,000 in first 90 days",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 1000,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "groceries",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": 2500,
+          "capPeriod": "quarter",
+          "notes": [
+            "Grocery stores and wholesale clubs combined — $2,500/quarter cap"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "wholesale-clubs",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": 2500,
+          "capPeriod": "quarter",
+          "notes": [
+            "Combined with grocery — $2,500/quarter cap total"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "⚠️ 3% foreign transaction fee",
+            "Preferred Rewards members earn up to 75% more (making rates 1.75%, 3.5%, 5.25%)"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": {
+        "type": "monthly",
+        "selectionRequired": true,
+        "selectionDeadlineNote": "Choose your 3% category online or in the app. Changes take effect the first day of the following month.",
+        "rate": 3,
+        "cap": 2500,
+        "capPeriod": "quarter",
+        "afterCapRate": 1,
+        "availableCategoryIds": [
+          "gas",
+          "online-shopping",
+          "dining",
+          "travel",
+          "drugstores",
+          "home-improvement"
+        ],
+        "availableCategoryDisplay": [
+          "Gas & EV Charging",
+          "Online Shopping",
+          "Dining",
+          "Travel",
+          "Drug Stores",
+          "Home Improvement/Furnishings"
+        ]
+      },
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.bankofamerica.com/credit-cards/customized-cash-rewards-credit-card/"
+    },
+    {
+      "id": "boa-unlimited-cash",
+      "name": "Bank of America Unlimited Cash Rewards",
+      "issuer": "Bank of America",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "cash",
+      "color": "#012169",
+      "url": "https://www.bankofamerica.com/credit-cards/unlimited-cash-rewards-credit-card/",
+      "signupBonus": {
+        "description": "$200 cash rewards bonus after spending $1,000 in first 90 days",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 1000,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "everything",
+          "rate": 1.5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "⚠️ 3% foreign transaction fee",
+            "Preferred Rewards Platinum Honors members earn 2.625%"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1.5,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.bankofamerica.com/credit-cards/unlimited-cash-rewards-credit-card/"
+    },
+    {
+      "id": "bilt-mastercard",
+      "name": "Bilt Mastercard",
+      "issuer": "Wells Fargo (Bilt)",
+      "network": "Mastercard",
+      "type": "points",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "bilt-points",
+      "color": "#1C1C1E",
+      "url": "https://www.biltrewards.com/card",
+      "signupBonus": null,
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Not on the 1st of the month (Rent Day — use card for rent that day instead to earn 1x on other purchases and 1x on rent)"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "travel",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Flights, hotels, car rentals, rideshare"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "Unique: earn 1x on rent payments with no transaction fee (up to 100,000 points/year)",
+            "Must make at least 5 purchases per month to earn points"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": "Renter-focused card. Points can transfer to major airline/hotel programs.",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.biltrewards.com/card"
+    },
+    {
+      "id": "citi-strata-premier",
+      "name": "Citi Strata Premier",
+      "issuer": "Citi",
+      "network": "Mastercard",
+      "type": "points",
+      "annualFee": 95,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "citi-thankyou",
+      "color": "#003A6C",
+      "url": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card",
+      "signupBonus": {
+        "description": "75,000 ThankYou points after spending $4,000 in first 3 months",
+        "amount": 75000,
+        "currency": "citi-thankyou",
+        "spend": 4000,
+        "days": 90
+      },
+      "credits": [
+        {
+          "name": "Hotel Credit",
+          "amount": 100,
+          "period": "annual",
+          "description": "$100 off a single hotel stay of $500+ booked through thankyou.com"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "hotels",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "flights",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "US supermarkets"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Gas stations and EV charging"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card"
+    },
+    {
+      "id": "apple-card",
+      "name": "Apple Card",
+      "issuer": "Goldman Sachs",
+      "network": "Mastercard",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#555555",
+      "url": "https://www.apple.com/apple-card/",
+      "signupBonus": null,
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "apple",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Apple Store, Apple.com, App Store, iTunes, Apple Music, iCloud, Apple TV+, etc."
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "2% Daily Cash only when paying with Apple Pay",
+            "1% when using the physical card"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": "Apple Card is only available to iPhone users. Requires iOS.",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.apple.com/apple-card/"
+    },
+    {
+      "id": "costco-anywhere-visa",
+      "name": "Costco Anywhere Visa (Citi)",
+      "issuer": "Citi",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#005DAA",
+      "url": "https://www.citi.com/credit-cards/costco-anywhere-visa-credit-card-by-citi",
+      "signupBonus": null,
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "gas",
+          "rate": 4,
+          "isMultiplier": false,
+          "cap": 7000,
+          "capPeriod": "year",
+          "notes": [
+            "US gas stations and EV charging — $7,000/year cap (then 1%)",
+            "Includes Costco gas"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Worldwide"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "travel",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Worldwide"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "costco",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Costco and Costco.com only"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "Cash back paid annually as a reward certificate in February",
+            "Costco membership required (~$65-$130/year)"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": true,
+      "membershipDetails": "Costco membership required. Only accepted at Costco and wherever Visa is accepted (Costco does not accept Mastercard, Amex, or Discover in-store).",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.citi.com/credit-cards/costco-anywhere-visa-credit-card-by-citi"
+    },
+    {
+      "id": "amazon-prime-rewards-visa",
+      "name": "Amazon Prime Rewards Visa",
+      "issuer": "Chase",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#FF9900",
+      "url": "https://www.amazon.com/credit-card",
+      "signupBonus": {
+        "description": "$100 Amazon Gift Card instantly upon credit card approval",
+        "amount": 100,
+        "currency": "cash",
+        "spend": 0,
+        "days": 0
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "amazon",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Amazon.com, Amazon Fresh, Amazon Go, Whole Foods Market",
+            "Requires active Prime membership"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Whole Foods Market only — with Prime membership"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "drugstores",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "Amazon Prime membership required (~$139/year or $14.99/month)"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": true,
+      "membershipDetails": "Amazon Prime membership required ($139/year or $14.99/month).",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.amazon.com/credit-card"
+    },
+    {
+      "id": "target-redcard",
+      "name": "Target RedCard",
+      "issuer": "Target",
+      "network": "Mastercard",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#CC0000",
+      "url": "https://www.target.com/redcard",
+      "signupBonus": null,
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "target",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Target and Target.com only"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Restaurants"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.target.com/redcard"
+    },
+    {
+      "id": "us-bank-altitude-connect",
+      "name": "US Bank Altitude Connect",
+      "issuer": "US Bank",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#D01F3C",
+      "url": "https://www.usbank.com/credit-cards/altitude-connect-visa-signature-credit-card.html",
+      "signupBonus": {
+        "description": "20,000 bonus points ($200 value) after spending $1,000 in first 90 days",
+        "amount": 20000,
+        "currency": "cash",
+        "spend": 1000,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "travel",
+          "rate": 4,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Hotels, airlines, car rentals, and cruise lines"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 4,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Gas stations and EV charging"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "streaming",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.usbank.com/credit-cards/altitude-connect-visa-signature-credit-card.html"
+    },
+    {
+      "id": "fidelity-rewards-visa",
+      "name": "Fidelity Rewards Visa Signature",
+      "issuer": "Elan Financial (Fidelity)",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#327A45",
+      "url": "https://www.fidelity.com/cash-management/visa-signature",
+      "signupBonus": null,
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "everything",
+          "rate": 2,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Rewards deposited directly into a Fidelity account (brokerage, IRA, 529, etc.)",
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 2,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": true,
+      "membershipDetails": "Fidelity brokerage, IRA, or other eligible account required for rewards deposit.",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.fidelity.com/cash-management/visa-signature"
+    },
+    {
+      "id": "navy-federal-more-rewards",
+      "name": "Navy Federal More Rewards Amex",
+      "issuer": "Navy Federal Credit Union",
+      "network": "Amex",
+      "type": "points",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#003F87",
+      "url": "https://www.navyfederal.org/loans-cards/credit-cards/more-rewards-american-express-credit-card.html",
+      "signupBonus": {
+        "description": "20,000 bonus points after spending $1,500 in first 90 days",
+        "amount": 200,
+        "currency": "cash",
+        "spend": 1500,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "groceries",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "transit",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Transit, rideshare"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "Navy Federal membership required — military/DoD/veteran/family"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": true,
+      "membershipDetails": "Navy Federal Credit Union membership required — open to active duty/retired military, DoD employees, veterans, and their families.",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.navyfederal.org/loans-cards/credit-cards/more-rewards-american-express-credit-card.html"
+    },
+    {
+      "id": "penfed-platinum-rewards",
+      "name": "PenFed Platinum Rewards Visa Signature",
+      "issuer": "PenFed Credit Union",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "cash",
+      "color": "#003082",
+      "url": "https://www.penfed.org/credit-cards/platinum-rewards-visa-signature-card",
+      "signupBonus": {
+        "description": "15,000 bonus points ($150 value) after spending $1,500 in first 90 days",
+        "amount": 15000,
+        "currency": "cash",
+        "spend": 1500,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "gas",
+          "rate": 5,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Gas stations and EV charging"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": false,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee",
+            "PenFed membership required — open to anyone with a $5 savings account"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": true,
+      "membershipDetails": "PenFed Credit Union membership required — open to anyone with a $5 savings deposit.",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.penfed.org/credit-cards/platinum-rewards-visa-signature-card"
+    },
+    {
+      "id": "delta-skymiles-gold",
+      "name": "Delta SkyMiles Gold Amex",
+      "issuer": "American Express",
+      "network": "Amex",
+      "type": "miles",
+      "annualFee": 150,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "delta-skymiles",
+      "color": "#003366",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/gold-delta-skymiles/",
+      "signupBonus": {
+        "description": "50,000 bonus miles after spending $2,000 in first 6 months",
+        "amount": 50000,
+        "currency": "delta-skymiles",
+        "spend": 2000,
+        "days": 180
+      },
+      "credits": [
+        {
+          "name": "TakeOff 15",
+          "amount": 0,
+          "period": "annual",
+          "description": "15% discount on Delta award tickets"
+        },
+        {
+          "name": "First Checked Bag Free",
+          "amount": 35,
+          "period": "annual",
+          "description": "First checked bag free on Delta flights for you and up to 8 companions on same reservation"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "flights",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Delta purchases only"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Worldwide"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "US supermarkets"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.americanexpress.com/us/credit-cards/card/gold-delta-skymiles/"
+    },
+    {
+      "id": "southwest-rapid-rewards-plus",
+      "name": "Southwest Rapid Rewards Plus",
+      "issuer": "Chase",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 69,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "southwest-points",
+      "color": "#304CB2",
+      "url": "https://creditcards.chase.com/travel-credit-cards/southwest-rapid-rewards/plus",
+      "signupBonus": {
+        "description": "50,000 Rapid Rewards points after spending $1,000 in first 3 months",
+        "amount": 50000,
+        "currency": "southwest-points",
+        "spend": 1000,
+        "days": 90
+      },
+      "credits": [
+        {
+          "name": "Anniversary Points",
+          "amount": 3000,
+          "period": "annual",
+          "description": "3,000 bonus points each card anniversary year"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "flights",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Southwest Airlines purchases only"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "hotels",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Rapid Rewards hotel and car rental partners"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "⚠️ 3% foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.chase.com/travel-credit-cards/southwest-rapid-rewards/plus"
+    },
+    {
+      "id": "marriott-bonvoy-boundless",
+      "name": "Marriott Bonvoy Boundless",
+      "issuer": "Chase",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 95,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "marriott-points",
+      "color": "#8B1A3D",
+      "url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless",
+      "signupBonus": {
+        "description": "3 Free Night Awards (each worth up to 50,000 points) after spending $3,000 in first 3 months",
+        "amount": 3,
+        "currency": "free-nights",
+        "spend": 3000,
+        "days": 90
+      },
+      "credits": [
+        {
+          "name": "Free Night Award",
+          "amount": 35000,
+          "period": "annual",
+          "description": "1 Free Night Award (up to 35,000 Bonvoy points) each card anniversary"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "hotels",
+          "rate": 6,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Marriott Bonvoy properties only"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": 6000,
+          "capPeriod": "year",
+          "notes": [
+            "Gas stations — $6,000/year cap combined with grocery and dining"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "groceries",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": 6000,
+          "capPeriod": "year",
+          "notes": [
+            "Grocery stores — $6,000/year cap combined with gas and dining"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 3,
+          "isMultiplier": true,
+          "cap": 6000,
+          "capPeriod": "year",
+          "notes": [
+            "Restaurants — $6,000/year cap combined with gas and groceries"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 2,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless"
+    },
+    {
+      "id": "world-of-hyatt",
+      "name": "World of Hyatt Card",
+      "issuer": "Chase",
+      "network": "Visa",
+      "type": "points",
+      "annualFee": 95,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "hyatt-points",
+      "color": "#7B3F00",
+      "url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt",
+      "signupBonus": {
+        "description": "30,000 Bonus Points after spending $3,000 in first 3 months + up to 30,000 more by spending $6,000 in first 6 months",
+        "amount": 60000,
+        "currency": "hyatt-points",
+        "spend": 6000,
+        "days": 180
+      },
+      "credits": [
+        {
+          "name": "Free Night Award",
+          "amount": 1,
+          "period": "annual",
+          "description": "1 Free Night Award (Cat 1-4) each card anniversary"
+        }
+      ],
+      "earningRates": [
+        {
+          "categoryId": "hotels",
+          "rate": 4,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Hyatt properties only"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Restaurants, cafes, coffee shops"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "transit",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Local transit, commuting"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "flights",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Flights booked directly with airlines"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": null,
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt"
+    },
+    {
+      "id": "chase-ink-business-cash",
+      "name": "Chase Ink Business Cash",
+      "issuer": "Chase",
+      "network": "Visa",
+      "type": "cashback",
+      "annualFee": 0,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 3,
+      "rewardsCurrency": "chase-ur",
+      "color": "#1A1F71",
+      "url": "https://creditcards.chase.com/business-credit-cards/ink/cash",
+      "signupBonus": {
+        "description": "$350 bonus after spending $3,000 in first 3 months, plus $400 after spending $6,000 total in first 6 months",
+        "amount": 750,
+        "currency": "cash",
+        "spend": 6000,
+        "days": 180
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "office-supplies",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": 25000,
+          "capPeriod": "year",
+          "notes": [
+            "US office supply stores — $25,000/year combined cap with phone/internet/cable/streaming"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "phone",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": 25000,
+          "capPeriod": "year",
+          "notes": [
+            "US cellular/landline/cable/internet services — $25,000/year combined cap"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "dining",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": 25000,
+          "capPeriod": "year",
+          "notes": [
+            "$25,000/year combined cap with gas"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "gas",
+          "rate": 2,
+          "isMultiplier": true,
+          "cap": 25000,
+          "capPeriod": "year",
+          "notes": [
+            "$25,000/year combined cap with dining"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Business card — requires business entity or self-employment",
+            "⚠️ 3% foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": "Business credit card — requires business entity or can be applied for as a sole proprietor/freelancer.",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://creditcards.chase.com/business-credit-cards/ink/cash"
+    },
+    {
+      "id": "amex-business-gold",
+      "name": "Amex Business Gold Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "type": "points",
+      "annualFee": 375,
+      "effectiveAnnualFee": null,
+      "foreignTransactionFee": 0,
+      "rewardsCurrency": "amex-mr",
+      "color": "#B8860B",
+      "url": "https://www.americanexpress.com/us/credit-cards/card/business-gold/",
+      "signupBonus": {
+        "description": "100,000 Membership Rewards points after spending $10,000 in first 3 months",
+        "amount": 100000,
+        "currency": "amex-mr",
+        "spend": 10000,
+        "days": 90
+      },
+      "credits": [],
+      "earningRates": [
+        {
+          "categoryId": "everything",
+          "rate": 4,
+          "isMultiplier": true,
+          "cap": 150000,
+          "capPeriod": "year",
+          "notes": [
+            "4x on the 2 categories where your business spends the most each month (auto-selected)",
+            "Eligible categories: US restaurants, US gas stations, transit, US advertising, US shipping, US computers/software/cloud",
+            "$150,000/year cap across 4x categories combined, then 1x",
+            "No foreign transaction fee"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        },
+        {
+          "categoryId": "everything",
+          "rate": 1,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Business card — requires business entity or self-employment"
+          ],
+          "requiresPortal": false,
+          "portalName": null
+        }
+      ],
+      "baseRate": 1,
+      "rotating": null,
+      "choiceCategory": null,
+      "activationRequired": false,
+      "membershipRequired": false,
+      "membershipDetails": "Business credit card — requires business entity or can be applied for as a sole proprietor/freelancer.",
+      "lastUpdated": "2026-05-15",
+      "dataSource": "https://www.americanexpress.com/us/credit-cards/card/business-gold/"
+    }
+  ]
+}
