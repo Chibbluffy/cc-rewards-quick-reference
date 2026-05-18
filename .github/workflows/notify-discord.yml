@@ -1,0 +1,38 @@
+name: Discord notification
+
+on:
+  pull_request:
+    types: [opened]
+    branches: [main]
+
+jobs:
+  notify:
+    # Only fires for data-update PRs opened by the monthly routine
+    if: startsWith(github.head_ref, 'data-update/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          curl -s -X POST \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"embeds\": [{
+                \"title\": \"🔄 CC Rewards — Update Ready for Review\",
+                \"description\": \"[${PR_TITLE} (#${PR_NUMBER})](${PR_URL})\",
+                \"color\": 16705372,
+                \"fields\": [
+                  {
+                    \"name\": \"Next step\",
+                    \"value\": \"Review the PR, verify sources, then merge to auto-deploy\",
+                    \"inline\": false
+                  }
+                ],
+                \"footer\": {\"text\": \"Merging triggers auto-deploy in ~30 seconds\"}
+              }]
+            }" \
+            "$DISCORD_WEBHOOK"
