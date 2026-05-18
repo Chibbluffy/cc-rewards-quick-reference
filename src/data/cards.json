@@ -1,6 +1,6 @@
 {
-  "version": "1.1",
-  "lastUpdated": "2026-05-15",
+  "version": "1.2",
+  "lastUpdated": "2026-05-18",
   "categories": [
     {
       "id": "dining",
@@ -841,10 +841,10 @@
       "color": "#B8860B",
       "url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
       "signupBonus": {
-        "description": "60,000 Membership Rewards points after spending $6,000 in first 6 months",
-        "amount": 60000,
+        "description": "100,000 Membership Rewards points after spending $8,000 in first 6 months",
+        "amount": 100000,
         "currency": "amex-mr",
-        "spend": 6000,
+        "spend": 8000,
         "days": 180
       },
       "credits": [
@@ -852,7 +852,7 @@
           "name": "Dining Credit",
           "amount": 120,
           "period": "annual",
-          "description": "$10/month at Grubhub, The Cheesecake Factory, Goldbelly, Wine.com, and Five Guys"
+          "description": "$10/month at Grubhub, The Cheesecake Factory, Five Guys, Buffalo Wild Wings, and Wonder (Goldbelly & Wine.com removed effective July 1, 2026)"
         },
         {
           "name": "Uber Cash",
@@ -886,6 +886,18 @@
           ],
           "requiresPortal": false,
           "portalName": null
+        },
+        {
+          "categoryId": "hotels",
+          "rate": 5,
+          "isMultiplier": true,
+          "cap": null,
+          "capPeriod": null,
+          "notes": [
+            "Prepaid hotels booked through AmexTravel.com or the Amex Travel app only"
+          ],
+          "requiresPortal": true,
+          "portalName": "Amex Travel"
         },
         {
           "categoryId": "flights",
